@@ -5,6 +5,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/midireccion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:text="Probando"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:onClick="geocode"
+            android:text="Geocode"/>
+    </LinearLayout>
     <fragment
         android:id="@+id/mapa"
         android:layout_width="match_parent"
@@ -56,6 +77,26 @@
                 android:layout_gravity="center"
                 android:onClick="addMarker"
                 android:text="Marcador"/>
+            <Button
+                android:id="@+id/btnmiubi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:onClick="ubicacion"
+                android:text="Mi ubicacion"/>
+            <Button
+                android:id="@+id/btnseguir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:onClick="Seguir"
+                android:text="OFF seguir"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
